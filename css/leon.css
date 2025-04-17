@@ -1,0 +1,139 @@
+/* Start Variables */
+:root{
+    --main-color: #10CAB7 ; 
+    --second-color : #777777
+}
+/* End Variables*/
+/* Start Global Rules*/
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Work Sans", sans-serif;
+    text-transform: capitalize;
+}
+.container{
+   
+    margin-left: auto;
+    margin-right: auto;
+    padding-left:15px ;
+    padding-right: 15px;
+}
+
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/* End Global Rules*/
+/**************************** Start Header *****************************************/
+.header{
+    padding:20px
+}
+.header .container{
+    display: flex;
+    justify-content: space-between;
+}
+.header  .logo{
+    width: 50px;
+    transition: 0.4s;
+}
+.header .logo:hover{
+    transform: scale(1.2);
+}
+.header .nav{
+    position: relative;
+    height: 15px;
+}
+.header .nav .nav-icon{
+    width:30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end ;
+}
+.header  .nav .nav-icon span{
+    display: flex;
+    margin-bottom: 3px;
+    width:100%;
+    height:2px;
+    background-color: #333333 ;
+}
+.header .nav .nav-icon span:nth-child(2){
+    width: 50%;
+    transition: 0.4s;
+}
+.header .nav:hover .nav-icon span:nth-child(2){
+    width: 100%;
+}
+.header .nav .nav-list{
+    position: absolute;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    width: 200px;
+    display: none;
+    right: 0%;
+    top: calc(100% + 10px)
+}
+.header .nav .nav-list li{
+    background-color:#F6F6F6;
+    padding: 15px 25px;
+    transition: 0.4s;
+}
+.header .nav .nav-list::before{
+    content: "";
+    position: absolute;
+    border: 10px solid red;
+    border-color: transparent transparent #F6F6F6 transparent;
+    top:  -20px;
+    right: 5px;
+}
+.header .nav .nav-list li:not(:last-child){
+    border-bottom: 1px solid #E5E5E5;
+}
+.header .nav-list a{
+    text-decoration: none;
+    color:#333333
+}
+.header .nav-list li:hover{
+    padding-left: 35px;
+}
+.header .nav:hover .nav-list{
+    display: block;
+}
+/********************************** End Header ***********************************/
+/***************************** start landing page ***********************************/
+.landing{
+    background-image: url(../images/landing.jpg);
+    background-size: cover;
+    height: calc(100vh - 64px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.landing .intro-text{
+    width: 320px;
+    text-align: center;
+}
+.landing h1{
+    margin: 0px;
+    color : var(--main-color, black);
+    font-weight: bold;
+   /* text-align: center; */
+}
+/***************************** End landing page ***********************************/
