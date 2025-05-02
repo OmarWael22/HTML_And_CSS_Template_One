@@ -391,6 +391,11 @@ body{
    font-weight: 800;
    font-size: 30px;
 }
+@media (max-width: 576px){
+    .contact .container > a{
+        font-size: 20px;
+    }
+}
 .contact .container .social{
     font-size: 16px;
     margin-top: 15px;
