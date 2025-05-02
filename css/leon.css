@@ -35,10 +35,28 @@ body{
     margin: 0px;
 
 }
+@media (max-width: 768px){
+    .special-heading h2{
+        font-size: 85px;
+    }
+}
+@media (max-width: 576px){
+    .special-heading h2{
+        font-size: 60px;
+    }
+    .special-heading p{
+         margin-top: -18px;
+    }
+}
 .special-heading  p {
     color: var(--second-color, black);
     text-align: center;
     margin-top: -30px;
+}
+@media (max-width: 576px){
+    .special-heading p{
+         margin-top: -18px;
+    }
 }
 .special-heading{
     padding-bottom:50px ;
